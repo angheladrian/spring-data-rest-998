@@ -38,19 +38,19 @@ public class Parent implements Identifiable<Long> {
     @Fetch(FetchMode.SUBSELECT)
     private Set<Child> children = new HashSet<>();
     
-//    public Set<Child> getChilden() {
-//        return children;
-//    }
-//
-//    public void setChildren(Set<Child> children) {
-//        if (this.children == children) {
-//            return;
-//        }
-//        this.children.clear();
-//        if (children != null) {
-//            this.children.addAll(children);
-//        }
-//
-//    }
+    public Set<Child> getChilden() {
+        return children;
+    }
+
+    public void setChildren(Set<Child> children) {
+        if (this.children == children) {
+            return;
+        }
+        this.children.clear();
+        if (children != null) {
+            this.children.addAll(children);
+        }
+
+    }
     
 }
